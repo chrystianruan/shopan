@@ -1,0 +1,319 @@
+body {
+    background-color: rgba(247, 243, 243, 0.829);
+}
+
+.empty {
+    color: #272727;
+    font-size: 15px;
+    margin: 15% auto;
+    text-align: center;
+}
+
+.empty i{
+
+    font-size:5em;
+}
+
+.empty i,h2{
+    margin: 1%;
+
+}
+.items-purchase {
+    margin: 0 2% 1% 2%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+
+}
+
+.items-purchase .items, .container-purchase {
+    box-shadow: 0 0 0.5em #ccc;
+}
+
+.items {
+    margin: 1%;
+    overflow-y: scroll;
+    max-height: 278px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+
+.buy {
+    background-color: #8ed64a;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+.buy button {
+    background:none;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+
+
+.container-purchase {
+    margin: 1%;
+    min-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+.container-purchase h2 {
+    font-size: 30px;
+    color: #8ed64a;
+}
+
+.container-purchase ul {
+    font-weight: bolder;
+    margin: 10px;
+    font-size: 12px;
+}
+
+
+.product {
+    
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin: 5px;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-description h3 {
+    font-size: 18px;
+
+}
+
+.product-description p {
+    font-size: 12px;
+
+}
+.amount {
+    display: flex;
+    flex-wrap: wrap;
+}
+.amount form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    margin-left: 8px;
+
+
+    
+}
+.amount form button {
+    background: none;
+    border: none;
+
+}
+
+.amount i {
+    font-size: 1.6em;
+    cursor: pointer;
+}
+.amount form p {
+    color: red;
+    font-size: 13px;
+    margin: 1.7px;
+    font-weight: bolder;
+
+}
+
+
+
+.invalid-quantity{
+    background-color: #f05151;
+    color: #030c05;
+    font-weight: bold;
+    border: 1px solid #C3E6CB;
+    border-radius: 5px;
+    float: left;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+
+.name-and-trash {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+.name-and-trash div form button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.name-and-trash div form button i {
+    font-size: 2.1em;
+    color: #0824c2;
+}
+
+
+.product-description .small-description {
+    font-size: 10px;
+
+}
+
+.product-description p {
+    color: rgb(148, 145, 145);
+}
+
+.card-description .small-description{
+    font-size: 10px;
+    color: rgb(148, 145, 145);
+}
+
+.recommendations {
+    margin: 1%;
+
+}
+
+.recommendations h3 {
+    margin: 1%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-recommendations {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-recommendations p, div button {
+    font-size: 13px;
+
+}
+
+.card {
+    display: flex;
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.radios {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.radios .inputs-radio {
+    margin: 3%;
+}
+
+.inputs-radio label i {
+    font-size: 2.5em;
+}
+
+.infos-card {
+    display: none;
+}
+
+.button-purchase {
+    margin: 1%;
+    text-align: center;
+}
+
+.inputs-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.inputs-card div {
+    margin: 5px;
+}
+
+.icard {
+    display: flex;
+    flex-direction: column;
+}
+
+.msg-purchased{
+    background-color: #6951f0;
+    color: #030c05;
+    font-weight: bold;
+    border: 1px solid #C3E6CB;
+    border-radius: 5px;
+    float: left;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+  }
+
+

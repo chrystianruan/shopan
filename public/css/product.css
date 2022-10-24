@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+.img-product {
+    width: 250px;
+
+}
+.title {
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: justify;
+    max-width: 500px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+   
+
+}
+
+.installments {
+    font-size: 15px;
+    color: rgb(167, 164, 164);
+}
+.div-features-product {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.btn-buy {
+    padding: 3px;
+    cursor: pointer;
+    background-color: #8ed64a;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+    width: 30%;
+}
+
+.btn-buy:hover {
+    background-color: #6cc717;
+}
+
+.btns-purchase {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.container .div-features-product {
+
+    margin: 1px 30px;
+}
+
+.description {
+    background-color: rgba(247, 243, 243, 0.829);
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+
+}
+
+.description h4 {
+    color: #272727;
+}
+
+.description p {
+    text-align: justify;
+    padding: 5px;
+}
