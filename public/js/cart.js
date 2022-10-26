@@ -35,8 +35,9 @@ let options = document.querySelectorAll(".type");
 let infos = document.querySelectorAll(".infos");
 
 let btnConfirm = document.getElementById("button-confirm");
-function showOrRideOptionsCreditCart() {
+
       for(let option of options) {
+        option.addEventListener("click", function() { 
         if (option.checked) {
           if (option.value == 3) {
             infosCard.style.display = "block";
@@ -50,9 +51,10 @@ function showOrRideOptionsCreditCart() {
             }
           }
       }
+    });
 
   }
-}
 
-btnConfirm.addEventListener("click", showOrRideOptionsCreditCart);
+
+
 
