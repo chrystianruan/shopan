@@ -1,0 +1,45 @@
+.container{
+  color: white;
+    padding: 0 20px;
+    margin: 100px auto;
+    overflow-x: scroll;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  position: relative;
+  background-color: #272727;
+  color: white;
+}
+/* Spacing */
+td, th {
+
+  padding: 7px;
+}
+th {
+  background: #8ed64a;
+  color: white;
+  border-radius: 0;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+
+tfoot > tr  {
+  background: black;
+  color: white;
+}
+tbody > tr:hover, a:hover {
+  background-color: #8ed64a;
+  color: black;
+}
+
+.view {
+  text-decoration: none;
+  color: white;
+}
+.view:hover {
+
+  text-decoration: underline;
+}

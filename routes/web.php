@@ -50,6 +50,11 @@ Route::middleware(['admin'])->group(function () {
     Route::post('/admin/new/category', [CategoryController::class, 'store']);
     Route::get('/admin/new/product', [ProductController::class, 'create']);
     Route::post('/admin/new/product', [ProductController::class, 'store']);
+    Route::get('/admin/filter/product', [ProductController::class, 'filterProducts']);
+    Route::post('/admin/filter/product', [ProductController::class, 'filterProducts']);
+    Route::get('/admin/edit/product/{id}', [ProductController::class, 'editProduct']);
+    Route::put('/admin/edit/product/{id}', [ProductController::class, 'updateProduct']);
+    Route::get('/admin/show/product/{id}', [ProductController::class, 'showProduct']);
     Route::post('/login', [AuthController::class, 'authenticate']);
 
 });
